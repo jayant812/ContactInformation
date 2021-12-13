@@ -23,7 +23,7 @@ namespace EHI.Models
         [RegularExpression("^\\w{0,50}$", ErrorMessage = "Last Name Should not be greater than 50 Characters")]
         public string lastName { get; set; }
 
-        [RegularExpression("^\\w+[\\w-\\.]*\\@\\w+((-\\w+)|(\\w*))\\.[a-z]{2,3}$", ErrorMessage = "Email Should be Valid")]
+        [RegularExpression("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$", ErrorMessage = "Email Should be Valid")]
         public string email { get; set; }
 
         [RegularExpression("^\\d{10,10}$", ErrorMessage = "Phone Number must be 10 digit number")]
